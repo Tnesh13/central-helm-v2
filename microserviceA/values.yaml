@@ -1,14 +1,14 @@
-# Default values for microserviceA.
+# Default values for central-helm.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: registry-intl.ap-southeast-3.aliyuncs.com/tinesh-poc-devops/java-webapp-docker
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "v10"
 
 imagePullSecrets: []
 nameOverride: ""
