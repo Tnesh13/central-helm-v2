@@ -80,3 +80,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+    
+common-template:
+  image:
+    repository: registry-intl.ap-southeast-3.aliyuncs.com/tinesh-poc-devops/java-webapp-docker
+    tag: "v10"

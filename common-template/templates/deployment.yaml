@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          image: {{ .Values.common-template.image.repository  }}:{{ Values.common-template.image.tag }}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
